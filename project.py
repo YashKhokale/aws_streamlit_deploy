@@ -58,9 +58,9 @@ else:
             id=auth[auth.email==em]['user_Id'].apply(lambda x: str(x))
             usr =id.iloc[0]
             response=personalize_runtime.get_recommendations(
-                campaignArn='arn:aws:personalize:us-east-1:333474833395:campaign/userproductrecommendation',
+                campaignArn='arn:aws:personalize:us-east-1:-----------/userproductrecommendation',
                 userId=usr,
-                filterArn= "arn:aws:personalize:us-east-1:333474833395:filter/purchase-filter"
+                filterArn= "arn:aws:personalize:us-east-1:------------/purchase-filter"
             )
             t=response["itemList"]
             st.write("---------------------------------------------")
@@ -73,9 +73,9 @@ else:
             cust_name=st.text_input("Name:")
             st.write("Welcome ", cust_name,"!")
             response=personalize_runtime.get_recommendations(
-                campaignArn='arn:aws:personalize:us-east-1:333474833395:campaign/userproductrecommendation',
+                campaignArn='arn:aws:personalize:us-east-1:----?------/userproductrecommendation',
                 userId=usr,
-                filterArn= "arn:aws:personalize:us-east-1:333474833395:filter/purchase-filter"
+                filterArn= "arn:aws:personalize:us-east-1:-----?------/purchase-filter"
             )
             t=response["itemList"]
         

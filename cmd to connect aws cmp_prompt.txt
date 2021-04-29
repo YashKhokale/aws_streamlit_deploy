@@ -1,0 +1,1 @@
+C:\Users\yashk\Desktop\aws_streamlit_delopy>ssh -i aws_streamlit_key.pem ec2-user@ec2-34-202-159-202.compute-1.amazonaws.com
